@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+cd PCode
+make clean
+cd ..
+make clean
+make
+./lang < test/$1 > PCode/result_compil.c
+cd PCode
+gcc -o result_compil result_compil.c PCode.o

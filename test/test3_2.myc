@@ -1,0 +1,16 @@
+int main(){
+    int x,y;
+    x = 7;
+    y = 2;
+    x = x + 1;
+    if(x==8){
+        x = x * 2;
+        y = x - y;
+        if(x != 16 && y != 14){
+            y = 0;
+        }
+        else
+        y = 1;
+    }
+    return y;
+}

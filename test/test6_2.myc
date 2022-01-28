@@ -1,0 +1,13 @@
+ int fact (int n) {
+   int f;
+   f = 1;
+   while(n>0){
+     f = f*n;
+     n=n-1;
+   }
+   return f;}
+
+
+ int main () {
+   return (fact (fact(3)));
+ }
